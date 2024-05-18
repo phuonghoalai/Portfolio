@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Calibri' !important;
+            
+        }
+        .p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+        }
+        .sidebar {
+            width: 40%; /* 4 parts of the total 10 parts */
+            background-color: #f4f4f4; /* Light grey background */
+            padding: 20px;
+            position: fixed; /* Stay in place */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            overflow-y: auto; /* Enable scrolling if content is long */
+            text-align: justify !important;
+            text-justify: inter-word !important;
+        }
+        .content {
+            flex: 6; /* 6 parts of the total 10 parts */
+            margin-left: 40%; /* Based on sidebar being 40% of the width */
+            padding: 20px;
+            width: 60%; /* Remaining width */
+            overflow-y: auto; /* Scrollable content */
+        }
+        .project img {
+            width: 100%; /* Full width of content area */
+            max-width: 800px; /* Maximum image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .project {
+            margin-bottom: 20px; /* Space between projects */
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="images/IMG_4766.JPG" alt="avt" style="max-width: 400px; height: auto;">
+            <h1>Name</h1>
+            <p>I am pursing MS degree in Actuarial Science from ISFA at Claude Bernard University Lyon 1.</p>
+            <div class="links">
+                <a href="path_to_your_cv.pdf">Resume</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/phuong-hoa-lai-hoalp111295/" target="_blank">LinkedIn</a>
+                <span>|</span>
+                <a href="https://github.com/phuonghoalai" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="project">
+               
+                <h1>Portfolio</h1>
+                <h2>M2 Actuary - ISFA</h2>
+                <p>Projects for the M2 Actuarial Science at Claude Bernard University Lyon 1 (2022-2023)</p>
+
+            </div>
+            <!-- noi dung project -->
+            <div class="project">
+                <h3>Variable Fee Approach Model: Principles and Implementation Challenges</h3>
+                <p>The objective of this project is to develop a comprehensive understanding and effective implementation strategy for the Variable Fee Approach (VFA) under IFRS 17. At the beginning of the project, we provided a brief introduction to the development context from IFRS 4 to IFRS 9 and IFRS 17. Additionally, we gave an overview of the three comptable models (VFA, GM et PAA) for each type of contract under IFRS 17. The two identified issues are why the VFA model is applied instead of the general model (GM) and what the differences are between the two models. To address these issues, we conducted a straightforward illustrative example of applying the VFA model under IFRS 17. We calculated the change in the value of the basic items, recording the change in the line carry as it represents a change in the obligation to pay an amount equal to the value of the underlying asset. We estimated the change in the projected costs that the insured will have to pay and recorded the change in variable costs in the CSM. Additionally, we allocated the CSM to the income statement for each period and demonstrated the impact on the Profit and Loss report under both models. Finally, we highlighted some of the operational challenges in applying the VFA under IFRS 17.</p>
+                <img src="https://github.com/phuonghoalai/Portfolio/blob/main/images/VFA%20model.png?raw=true" alt="Project Name">
+                <a href="https://vn-quant.github.io/project_employee/">Project Link</a>
+            </div>
+            <!-- noi dung project -->
+
+            <!-- noi dung project -->
+            <div class="project">
+                <h3>Estimation of copula between BMW and VOLKSWAGEN stocks</h3>
+                <p>By estimating the copula, we can quantify the degree of dependence between the two stocks and use this information to optimize our portfolio by selecting less correlated stocks and offering greater diversification benefits. In this project, we analyze the dependence between the stock prices of two major global automotive manufacturers, BMW Group (BMW) and Volkswagen Group (VOW3). Using a variety of methods to estimate the copula model (parametric, semiparametric, and nonparametric approaches), we can conclude that the copula model that best fits the BMW and VOLKSWAGEN stocks is the t-copula. Furthermore, there is a strong positive dependence between the two stocks, and this dependence is heavy-tailed. This means that extreme events are more likely to occur than in a normal distribution and that the correlation between the two stocks can be more pronounced during market stress periods. These findings have implications for portfolio diversification and risk management strategies.</p>
+                <img src="https://github.com/phuonghoalai/Portfolio/blob/main/images/Estimation%20de%20copule.png?raw=true" alt="Project Name">
+                <a href="https://rpubs.com/luciusvu/1152507">Project Link</a>
+            </div>
+
+            <!-- noi dung project -->
+            <div class="project">
+                <h3>Business Case in Reinsurance</h3>
+                <p>The aim of this project is to suggest pricing for risk coverage through the reinsurance mechanism. We utilized the provided database to propose optimal pricing for various reinsurance structures. To implement our findings, we utilized R software and Excel to estimate distributions, establish the threshold that distinguishes attritional claims from extremes, and analyze data. Upon acquiring the results, we engaged in placement sessions as a reinsurer to negotiate terms with the insurer.</p>
+                <img src="https://github.com/phuonghoalai/Portfolio/blob/main/images/businesscase.png?raw=true" alt="Project Name">
+                <a href="https://rpubs.com/luciusvu/1152507">Project Link</a>
+            </div>
+
+            <!-- noi dung project -->
+            <div class="project">
+                <h3>Modeling Solvency Capital Requirement (SCR)</h3>
+                <p>Today, savings-oriented products are becoming increasingly popular. Therefore, it is crucial to perform the necessary calculations around these types of savings products, in accordance with the framework required by Solvency II. In this report, we will calculate the Solvency Capital Requirement (SCR) for a savings product. For this type of savings product, the SCR signifies the minimum amount of capital that the insurer must hold to cover the risks associated with the product. It is calculated as the difference between the Net Asset Value (NAV) at time zero and the Value-at-Risk (VaR) at 99.5% of the discounted value of the expected NAV for the next period, according to Solvency II. Firstly, we estimate the Net Asset Value (NAV) at time 0. Then, we will utilize two methods: the Simulations within Simulations (SdS) method and the Least-Square Monte-Carlo (LSMC) method to determine the distribution of NAV1, and consequently calculate the SCR for each method. Between the two methods used in this project, we observe that:</p>
+                <ul style="text-align: left; font-size: 16px;">
+                    <li>Compared to the LSMC method, the SdS method is easier to understand and implement. However, it depends on a higher number of simulations (secondary), has a less precise estimation of the SCR, and takes much longer to compute.</li>
+                    <li>The different bases of the LSMC method yield very similar results. However, using the Hermite basis has the fastest computation time among the three bases used.</li>
+                    <li>Regarding the sensitivity of the SCR when using the LSMC method, we also note that the risk-free rate has a negative relationship with the SCR, while the technical rate has a positive relationship.</li>
+                </ul>
+                <img src="https://github.com/phuonghoalai/Portfolio/blob/main/images/techniques%20numeriques.png?raw=true" alt="Project Name">
+                <a href="https://rpubs.com/luciusvu/1152507">Project Link</a>
+            </div>
+
+            <!-- noi dung project -->
+            <div class="project">
+                <h3>Auto Pricing Competition</h3>
+                <p>The aim of this project is to construct a model to compute prime pure. The provided data contain 60000 observation. To calculate the prime pure, we utilized the following model: Prime pure = P[Y>0]E[Y|Y>0,X]. After processing the data, we tested 5 models for probability of claim including: Logit model, Probit model, CART, Random Forest and XGBoost and we decided to choose Random Forest model for our Probability of Claim. For E[Y|Y>0,X], this section exclusively computes data where ClaimValue is greater than 0, necessitating a distinct approach to data management compared to the preceding section. Subsequently, we developed three models: GLM, XGBoost, and Random Forest, and concluded that Random Forest outperformed the other two models based on RMSE. Finally, we applied our chosen model to calculate the prime pure. The model will utilize the 'data.test' as input and yield the prime value as output.</p>
+                <img src="https://github.com/phuonghoalai/Portfolio/blob/main/images/data%20science.png?raw=true" alt="Project Name">
+                <a href="https://phuonghoalai.github.io/projet-data-science/">Project Link</a> | <a href="data science/Project_Data_Science.pdf">Report</a>
+            </div>
+
+            <div class="project">
+                <h2>M1 Actuary - ISFA</h2>
+                <p>Project for the M1 Actuarial Science - ISFA at National Economics University (2021-2022)</p>
+
+            </div>
+
+            <!-- noi dung project -->
+            <div class="project">
+                <h3>Solvency for Life Insurance Company</h3>
+                <p>The insurance industry is adopted the concept of the standard risk measurement system. The primary objective of any risk management framework is to enhance consumer protection. A robust framework instills greater confidence among policyholders in insurers' products. Additionally, legislators are increasingly shifting the focus of supervisors from mere compliance monitoring and capital assessment to evaluating insurers' risk profiles and the quality of their risk management and governance systems. This shift is crucial when considering the foundation of the risk management framework. Our thesis focuses on advocating for the adoption of standardized risk management frameworks for the life insurance sector worldwide, such as Risk-Based Capital and Solvency II. Subsequently, we address the practical challenges associated with implementing these frameworks in the context of Vietnam.</p>
+                <img src="https://github.com/phuonghoalai/Portfolio/blob/main/images/rbc.png?raw=true" alt="Project Name">
+                <a href="https://rpubs.com/luciusvu/1152507">Project Link</a>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
